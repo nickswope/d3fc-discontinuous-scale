@@ -20,7 +20,7 @@ describe('bundle', function() {
                 './build/d3fc-discontinuous-scale.js'
             ],
             done: (_, win) => {
-                const scale = win.fc.discontinuousScale();
+                const scale = win.fc.scaleDiscontinuous();
                 const scaled = scale(23);
                 expect(scaled).not.toBeUndefined();
                 done();
